@@ -1,5 +1,5 @@
 current directory: /home/wlady/Tareas_IIC3103_2018/vendor/bundle/ruby/2.5.0/gems/pg-1.0.0/ext
-/home/wlady/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180403-30171-1t5crfb.rb extconf.rb
+/home/wlady/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180403-4623-12hf9ju.rb extconf.rb
 checking for pg_config... yes
 Using config values from /usr/bin/pg_config
 checking for libpq-fe.h... yes
@@ -45,4 +45,4 @@ linking shared-object pg_ext.so
 
 current directory: /home/wlady/Tareas_IIC3103_2018/vendor/bundle/ruby/2.5.0/gems/pg-1.0.0/ext
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 pg_ext.so ./.gem.20180403-30171-1dy4q37
+/usr/bin/install -c -m 0755 pg_ext.so ./.gem.20180403-4623-1poaytk
