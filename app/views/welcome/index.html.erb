@@ -1,0 +1,35 @@
+<h1>Noticias</h1>
+
+
+
+
+<p id="notice"><%= notice %></p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Subhead</th>
+      <th>Body</th>
+      <th>Author</th>
+        <th>Comentarios</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= entry.title %></td>
+        <td><%= entry.subhead %></td>
+        <td><%= truncate(entry.body, :length => 500) %></td>
+          <td><%= entry.author %></td>
+        <td><%= entry.comments.size %></td>
+        <td><%= link_to 'Read More', entry %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
