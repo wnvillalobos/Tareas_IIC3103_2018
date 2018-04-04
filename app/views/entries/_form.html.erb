@@ -26,6 +26,9 @@
     <%= form.text_area :body, id: :entry_body %>
   </div>
 
+    <%= form.hidden_field :author, value: @current_admin %>
+
+
   <div class="actions">
     <%= form.submit %>
   </div>

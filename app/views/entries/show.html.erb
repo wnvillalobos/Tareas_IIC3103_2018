@@ -22,17 +22,12 @@
 
 <p>
     <strong>Comentarios:</strong>
-  </p>
-  <p>
   <% @entry.comments.each do |c| %>
   <strong>Usuario:</strong>
   <%=  c.user %>
-  </p>
-  <p>
-    <strong>Comentario:</strong>
-      <%= c.body %>
+  <strong>Comentario:</strong>
+  <%= c.body %>
   <% end %>
-  </p>
 </p>
 
 <h1>New Comment</h1>
@@ -48,10 +43,13 @@
     <%= form.text_area :body, id: :comment_body %>
   </div>
 
+  <%= form.hidden_field :entry_id, value: @entry.id %>
+
 
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>
 
 <%= link_to 'Back', entries_path %>

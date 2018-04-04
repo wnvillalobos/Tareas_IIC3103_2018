@@ -21,10 +21,9 @@
     <%= form.text_area :body, id: :comment_body %>
   </div>
 
-  <div class="field">
-    <%= form.label :entry_id %>
-    <%= form.text_field :entry_id, id: :comment_entry_id %>
-  </div>
+
+  <%= form.hidden_field :entry_id, value: @entry %>
+
 
   <div class="actions">
     <%= form.submit %>

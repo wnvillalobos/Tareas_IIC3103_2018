@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'administrar/index'
 
+
   resources :comments
   resources :entries
   devise_for :admins
